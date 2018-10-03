@@ -17,14 +17,12 @@ Last updated: 2018-10-03
 
 - Cannot convert websites directly from [https://www.vscentrum.be](https://www.vscentrum.be)
     - Certificate of VSC is not acknowledged
+    - I tried to trust the certificate manually, but it did not work out properly
 ```bash
 pandoc -s -r html https://www.vscentrum.be/cluster-doc/development/blas-lapack -o example12.text
 pandoc: TlsExceptionHostPort (HandshakeFailed (Error_Protocol ("certificate has unknown CA",True,UnknownCa))) "www.vscentrum.be" 443
 ```
-    - I tried to trust the certificate manually, but it did not work out properly
-
 - Pages delivered by CMS contain plenty of `<div>` and other statements that confuse `pandoc`. Using `pandoc` without sanitizing the `html` page first does give poor results
-
 - The header (or `<h1>`) title of the website is in the CMS and not stored in the generated `html` file.
 - Without a filter `pandoc` cannot keep anchors defined in `html`, see [https://github.com/jgm/pandoc/issues/3319](https://github.com/jgm/pandoc/issues/3319)
     - We cannot keep anchors in headlines without some intervention. Maybe some special `pandoc` filter?
