@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'VSC documentation test'
-copyright = '2018, AJ'
-author = 'AJ'
+copyright = '2018, VSC'
+author = 'Vlaams Supercomputing Centre'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
