@@ -21,7 +21,7 @@ Last updated: 2018-10-03
 pandoc -s -r html https://www.vscentrum.be/cluster-doc/development/blas-lapack -o example12.text
 pandoc: TlsExceptionHostPort (HandshakeFailed (Error_Protocol ("certificate has unknown CA",True,UnknownCa))) "www.vscentrum.be" 443
 ```
-        - I tried to trust the certificate manually, but it did not work out properly
+    - I tried to trust the certificate manually, but it did not work out properly
 
 - Pages delivered by CMS contain plenty of `<div>` and other statements that confuse `pandoc`. Using `pandoc` without sanitizing the `html` page first does give poor results
 
