@@ -10,6 +10,9 @@ def replaceVSCPathInLink( elem, doc ):
 #  if type(elem)==Link:
     #elem.target = elem.content.target.upper()
    if hasattr( elem, 'target' ):
+     f = open( "workfile", "w+" ) 
+     f.write("asdf")
+     f.close()
 #    print elem.text 
     return elem
 #  toReplace = "</cluster-doc"
