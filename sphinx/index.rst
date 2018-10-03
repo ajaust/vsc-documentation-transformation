@@ -11,8 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   cluster-doc/development/intel_toolchain
-   cluster-doc/development/blas_lapack
+   generated_rst/intel_toolchain
+   generated_rst/blas_lapack
 
 Indices and tables
 ==================
