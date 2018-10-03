@@ -5,7 +5,7 @@ Last updated: 2018-10-03
 ## Files and directories
 
 - `make_all.sh`: Converts all `html` files in `pandoc/clean_html/` into restructuredText (`rst`) files and stores them in `pandoc/generated_rst/`
-- `pandoci/`: Stores files and directories for conversion of `html` to `rst` files. The script `convert_all_html_to_rst.sh` converts all files it finds in `clean_html` subdirectory. `vscPathFilter.py` was a try to write a `pandoc` filter in order to convert link targets that does not work at the moment.
+- `pandoc/`: Stores files and directories for conversion of `html` to `rst` files. The script `convert_all_html_to_rst.sh` converts all files it finds in `clean_html` subdirectory. `vscPathFilter.py` was a try to write a `pandoc` filter in order to convert link targets that does not work at the moment.
 - `sphinx/`: Contains the project to create a website from the `rst` files created by `pandoc` 
 
 ## Dependencies
