@@ -1,12 +1,17 @@
 # VSC documentation transformation
 
-Last updated: 2018-10-03
+Last updated: 2018-10-04
 
 ## Files and directories
 
 - `make_all.sh`: Converts all `html` files in `pandoc/clean_html/` into restructuredText (`rst`) files and stores them in `pandoc/generated_rst/`
 - `pandoc/`: Stores files and directories for conversion of `html` to `rst` files. The script `convert_all_html_to_rst.sh` converts all files it finds in `clean_html` subdirectory. `vscPathFilter.py` was a try to write a `pandoc` filter in order to convert link targets that does not work at the moment.
-- `sphinx/`: Contains the project to create a website from the `rst` files created by `pandoc` 
+- `docs/`: Contains the project to create a website from the `rst` files. The directory also contains the configuration file to create such a website with `sphinx`. 
+
+## Documentation on read the docs
+
+- The documentation is published through `readthedocs.org` on [https://vsc-documentation-transformation.readthedocs.io/en/latest/](https://vsc-documentation-transformation.readthedocs.io/en/latest/)
+- Web hooks are active to rebuild the documentation for every `pull` and each `pull` request (standard settings)
 
 ## Dependencies
 
@@ -17,7 +22,7 @@ Last updated: 2018-10-03
 
 - Cannot convert websites directly from [https://www.vscentrum.be](https://www.vscentrum.be)
     - Certificate of VSC is not acknowledged
-    - I tried to trust the certificate manually, but it did not work out properly
+    - I tried to trust the certificate manually, but it did not work out properly. This might be related to the current certificate issues due to the migration of the website.
 ```bash
 pandoc -s -r html https://www.vscentrum.be/cluster-doc/development/blas-lapack -o example12.text
 pandoc: TlsExceptionHostPort (HandshakeFailed (Error_Protocol ("certificate has unknown CA",True,UnknownCa))) "www.vscentrum.be" 443
