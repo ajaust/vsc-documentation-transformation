@@ -10,8 +10,9 @@ Last updated: 2018-10-04
 
 ## Documentation on readthedocs
 
-- The documentation is published through `readthedocs.org` on [https://vsc-documentation-transformation.readthedocs.io/en/latest/](https://vsc-documentation-transformation.readthedocs.io/en/latest/)
+- The documentation is published through [https://readthedocs.org/](https://readthedocs.org/) on [https://vsc-documentation-transformation.readthedocs.io/en/latest/](https://vsc-documentation-transformation.readthedocs.io/en/latest/)
 - Web hooks are active to rebuild the documentation for every `pull` and each `pull` request (standard settings)
+- I basically followed the documentation on [https://dont-be-afraid-to-commit.readthedocs.io/en/latest/documentation.html](https://dont-be-afraid-to-commit.readthedocs.io/en/latest/documentation.html)
 
 ## Dependencies
 
