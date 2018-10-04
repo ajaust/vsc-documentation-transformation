@@ -6,6 +6,8 @@ targetdir="generated_rst"
 
 # Pandoc version less than 2 does not create proper reStructuredText files from html
 check_pandoc_version() {
+  echo "Testing pandoc version"
+
   pandoc_version=$(pandoc --version | head -n1 | cut -d' ' -f2) 
   pandoc_major_version=$(echo "${pandoc_version}" | cut -c1 )
 
