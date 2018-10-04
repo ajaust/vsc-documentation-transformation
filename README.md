@@ -8,7 +8,7 @@ Last updated: 2018-10-04
 - `pandoc/`: Stores files and directories for conversion of `html` to `rst` files. The script `convert_all_html_to_rst.sh` converts all files it finds in `clean_html` subdirectory. `vscPathFilter.py` was a try to write a `pandoc` filter in order to convert link targets that does not work at the moment.
 - `docs/`: Contains the project to create a website from the `rst` files. The directory also contains the configuration file to create such a website with `sphinx`. 
 
-## Documentation on read the docs
+## Documentation on readthedocs
 
 - The documentation is published through `readthedocs.org` on [https://vsc-documentation-transformation.readthedocs.io/en/latest/](https://vsc-documentation-transformation.readthedocs.io/en/latest/)
 - Web hooks are active to rebuild the documentation for every `pull` and each `pull` request (standard settings)
