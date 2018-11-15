@@ -14,6 +14,9 @@ Contents:
    generated_rst/intel_toolchain
    generated_rst/blas_lapack
 
+   handwritten_rst/references
+   handwritten_rst/directives
+
 Indices and tables
 ==================
 
