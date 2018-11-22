@@ -29,9 +29,9 @@ There are two ways to generate external links (i.e. some web address for example
 
 #. If you write normal text containing a web address  https://www.vscentrum.be/ or a mail address alex@example.be no markup is needed. It is parsed automatically.
 
-#. Seperate link and target definition link in this `link definition`_ also leading to the VSC homepage. 
+#. Seperate link and target definition link. This `link definition`_ also leading to the VSC homepage, but in the text we only have a placeholder. The actual target is specified somewhere else.  
 
-   #. Link in text
+   #. Link in text using the placeholder that ends with ``_``
 
       ::
 
@@ -45,13 +45,13 @@ There are two ways to generate external links (i.e. some web address for example
 
 #. If you want a link that opens in a new window/tab you have to use some html. The solution I have found was on |stackoverflow| (as always). 
 
-   #. Link in text
+   #. Link in text using a placeholder starting and ending with ``|``
 
       .. code-block:: none
       
          ...was on |stackoverflow| (as always).
 
-   #. Target definition
+   #. Target definition consisting of html
 
       ::
 
